@@ -24,6 +24,7 @@ public class Product {
 	      for (Item item : items) {
 	         System.out.print("Item : " + item.name());
 	         System.out.print(", Display : " + item.display().display());
+	         System.out.println(", Cpu : " + item.cpu().cpuName()); 
 	         System.out.println(", Price : " + item.price());
 	      }		
 	   }	
