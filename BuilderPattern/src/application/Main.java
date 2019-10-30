@@ -25,7 +25,7 @@ public class Main extends Application {
 	public static void main(String[] args) {
 		launch(args);
 
-	      ProductBuilder prodBuilder = new ProductBuilder();
+	      ProductBuilder prodBuilder = ProductBuilder.getInstance();
 
 	      Product iphone = prodBuilder.buildIphone();
 	      System.out.println("iphone 11 pro");
