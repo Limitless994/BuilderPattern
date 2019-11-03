@@ -3,29 +3,27 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UiMain">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UiMain">
    <children>
-      <Button layoutX="220.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateRandom" prefHeight="31.0" prefWidth="175.0" text="Generate Random Number" />
-      <Button layoutX="220.0" layoutY="80.0" mnemonicParsing="false" onAction="#generateRandom" prefHeight="31.0" prefWidth="175.0" text="Build Macbook" />
-      <Button layoutX="14.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateRandom" prefHeight="31.0" prefWidth="175.0" text="Generate Random Number" />
-      <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#generateRandom" prefHeight="31.0" prefWidth="175.0" text="Build Iphone" />
-      <ImageView fitHeight="249.0" fitWidth="308.0" layoutX="608.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Desktop/Nuova%20cartella/black.png" />
-         </image></ImageView>
-      <Label layoutX="439.0" layoutY="80.0" text="Name" />
-      <Label layoutX="152.0" layoutY="297.0" />
-      <Label layoutX="442.0" layoutY="115.0" text="Price" />
+      <Button layoutX="156.0" layoutY="118.0" mnemonicParsing="false" onAction="#generateIphone" prefHeight="31.0" prefWidth="175.0" text="Add Iphone" />
+      <Label fx:id="name" layoutX="408.0" layoutY="118.0" prefHeight="17.0" prefWidth="91.0" text="Name" />
       <Label layoutX="395.0" prefHeight="49.0" prefWidth="213.0" text="Builder Pattern Interface">
          <font>
             <Font size="19.0" />
          </font>
       </Label>
-      <ListView layoutX="33.0" layoutY="321.0" prefHeight="348.0" prefWidth="421.0" />
+      <Label fx:id="cpuType" layoutX="408.0" layoutY="149.0" text="Cpu" />
+      <Label fx:id="displayType" layoutX="410.0" layoutY="181.0" text="Display" />
+      <Label fx:id="cost" layoutX="409.0" layoutY="211.0" prefHeight="17.0" prefWidth="81.0" text="Costo" />
+      <Button layoutX="156.0" layoutY="168.0" mnemonicParsing="false" onAction="#generateXiaomiPhone" prefHeight="31.0" prefWidth="175.0" text="Add XiaomiPhone" />
+      <Button layoutX="156.0" layoutY="220.0" mnemonicParsing="false" onAction="#generateMacbook" prefHeight="31.0" prefWidth="175.0" text="Add Macbook" />
+      <Button layoutX="156.0" layoutY="271.0" mnemonicParsing="false" onAction="#generateMiNotebook" prefHeight="31.0" prefWidth="175.0" text="Add Mi notebook" />
+      <ListView fx:id="shelf" layoutX="77.0" layoutY="350.0" prefHeight="285.0" prefWidth="329.0" />
+      <ImageView fx:id="imageview" fitHeight="356.0" fitWidth="418.0" layoutX="507.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="628.0" layoutY="564.0" mnemonicParsing="false" onAction="#showDiagram" prefHeight="41.0" prefWidth="175.0" text="Show Builder Pattern Diagram" />
    </children>
 </AnchorPane>

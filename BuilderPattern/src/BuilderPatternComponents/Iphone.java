@@ -11,4 +11,8 @@ public class Iphone extends Smartphone {
 	public String name() {
 		return "Iphone 11 pro";
 	}
+	   public Brand brand() {
+		   return Brand.apple;
+	   }
+	
 }

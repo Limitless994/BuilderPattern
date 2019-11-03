@@ -1,5 +1,6 @@
 package BuilderPatternComponents;
 
+
 public class XiaomiPhone extends Smartphone {
 	   
 	@Override
@@ -11,4 +12,8 @@ public class XiaomiPhone extends Smartphone {
 	   public String name() {
 	      return "Xiaomi Mi9t";
 	   }
+	   public Brand brand() {
+		   return Brand.xiaomi;
+	   }
+	
 }

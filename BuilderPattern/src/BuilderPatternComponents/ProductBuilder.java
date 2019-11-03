@@ -3,7 +3,6 @@ package BuilderPatternComponents;
 public class ProductBuilder {
 
 	private static ProductBuilder instance = new ProductBuilder();
-
 	private ProductBuilder() {}
 
 	public Product buildXiaomiSmartphone (){

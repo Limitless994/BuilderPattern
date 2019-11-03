@@ -14,4 +14,7 @@ public abstract class Notebook implements Item {
 		return new NotebookCpu();
 		   
 	   }
+	   public ProductType type() {
+		   return ProductType.notebook;
+	   }
 	}

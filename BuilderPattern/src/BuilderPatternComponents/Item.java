@@ -5,4 +5,6 @@ public interface Item {
 	public Display display();
 	public Cpu cpu();
 	public float price();
+	public ProductType type();
+	public Brand brand();
 }

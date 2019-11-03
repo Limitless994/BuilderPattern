@@ -11,5 +11,8 @@ public class MacBook extends Notebook {
 	   public String name() {
 	      return "MacBook pro ";
 	   }
-
-	}
+	   public Brand brand() {
+		   return Brand.apple;
+	   }
+	
+}

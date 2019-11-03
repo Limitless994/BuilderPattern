@@ -11,4 +11,8 @@ public class MiNotebook extends Notebook {
 	   public String name() {
 	      return "MiNotebook pro ";
 	   }
+	   public Brand brand() {
+		   return Brand.xiaomi;
+	   }
+	
 	}

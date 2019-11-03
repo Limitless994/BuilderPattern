@@ -4,28 +4,35 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Product {
-	   private List<Item> items = new ArrayList<Item>();	
+	private List<Item> items = new ArrayList<Item>();	
 
-	   public void addItem(Item item){
-	      items.add(item);
-	   }
-
-	   public float getCost(){
-	      float cost = 0.0f;
-	      
-	      for (Item item : items) {
-	         cost += item.price();
-	      }		
-	      return cost;
-	   }
-
-	   public void showItems(){
-	   
-	      for (Item item : items) {
-	         System.out.print("Item : " + item.name());
-	         System.out.print(", Display : " + item.display().display());
-	         System.out.println(", Cpu : " + item.cpu().cpuName()); 
-	         System.out.println(", Price : " + item.price());
-	      }		
-	   }	
+	public void addItem(Item item){
+		items.add(item);
 	}
+
+	public float getCost(){
+		float cost = 0.0f;
+
+		for (Item item : items) {
+			cost += item.price();
+		}		
+		return cost;
+	}
+
+	public List<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(List<Item> items) {
+		this.items = items;
+	}
+
+	public void showItems(){
+		for (Item item : items) {
+			System.out.print("Item : " + item.name());
+			System.out.print(", Display : " + item.display().display());
+			System.out.println(", Cpu : " + item.cpu().cpuName()); 
+			System.out.println(", Price : " + item.price());
+		}		
+	}	
+}

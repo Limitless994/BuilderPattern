@@ -14,5 +14,8 @@ public abstract class Smartphone implements Item {
 		return new SmartphoneCpu();
 		   
 	   }
+	   public ProductType type() {
+		   return ProductType.smartphone;
+	   }
 	   
 }
