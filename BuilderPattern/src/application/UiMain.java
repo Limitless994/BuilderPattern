@@ -2,16 +2,13 @@ package application;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import java.util.ResourceBundle;
 
-import BuilderPatternComponents.Brand;
-import BuilderPatternComponents.Item;
-import BuilderPatternComponents.Product;
-import BuilderPatternComponents.ProductType;
+import BuilderPatternComponents.Creator;
 import BuilderPatternComponents.ProductsFactory;
+import GenericComponents.Brand;
+import Type.Item;
+import Type.ProductType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -62,9 +59,7 @@ public class UiMain implements Initializable {
 	}
 	
 	public void generateIphone(ActionEvent e) {
-		float c=0.0f;
-		Product phone = pf.getProduct(ProductType.smartphone,Brand.apple);
-		phone.showItems();
+		Creator phone = pf.getProduct(ProductType.smartphone,Brand.apple);
 		for (Item item : phone.getItems()) {
 			name.setText(item.name());
 			displayType.setText(item.display().display());
@@ -76,9 +71,7 @@ public class UiMain implements Initializable {
 		list.add("Iphone 11");
 	}
 	public void generateXiaomiPhone(ActionEvent e) {
-		float c=0.0f;
-		Product phone = pf.getProduct(ProductType.smartphone,Brand.xiaomi);
-		phone.showItems();
+		Creator phone = pf.getProduct(ProductType.smartphone,Brand.xiaomi);
 		for (Item item : phone.getItems()) {
 			name.setText(item.name());
 			displayType.setText(item.display().display());
@@ -90,9 +83,7 @@ public class UiMain implements Initializable {
 		list.add("Xiaomi Mi 9t");
 	}
 	public void generateMacbook(ActionEvent e) {
-		float c=0.0f;
-		Product phone = pf.getProduct(ProductType.notebook,Brand.apple);
-		phone.showItems();
+		Creator phone = pf.getProduct(ProductType.notebook,Brand.apple);
 		for (Item item : phone.getItems()) {
 			name.setText(item.name());
 			displayType.setText(item.display().display());
@@ -104,9 +95,7 @@ public class UiMain implements Initializable {
 		list.add("Macbook Pro");
 	}
 	public void generateMiNotebook(ActionEvent e) {
-		float c=0.0f;
-		Product phone = pf.getProduct(ProductType.notebook,Brand.xiaomi);
-		phone.showItems();
+		Creator phone = pf.getProduct(ProductType.notebook,Brand.xiaomi);
 		for (Item item : phone.getItems()) {
 			name.setText(item.name());
 			displayType.setText(item.display().display());

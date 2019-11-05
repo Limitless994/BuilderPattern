@@ -1,4 +1,6 @@
-package BuilderPatternComponents;
+package Products;
+
+import GenericComponents.Brand;
 
 public class MacBook extends Notebook {
 

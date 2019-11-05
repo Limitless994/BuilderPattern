@@ -1,9 +1,12 @@
 package BuilderPatternComponents;
 
-public class ProductsFactory {
-	ProductBuilder pb = ProductBuilder.getInstance();
+import GenericComponents.Brand;
+import Type.ProductType;
 
-	public Product getProduct(ProductType type,Brand brand){
+public class ProductsFactory {
+	Director pb = Director.getInstance();
+
+	public Creator getProduct(ProductType type,Brand brand){
 		if(type == null){
 			return null;
 		}		

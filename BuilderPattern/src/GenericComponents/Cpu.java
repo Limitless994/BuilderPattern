@@ -1,4 +1,4 @@
-package BuilderPatternComponents;
+package GenericComponents;
 
 public interface Cpu {
 	   public String cpuName();

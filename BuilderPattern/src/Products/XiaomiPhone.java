@@ -1,5 +1,6 @@
-package BuilderPatternComponents;
+package Products;
 
+import GenericComponents.Brand;
 
 public class XiaomiPhone extends Smartphone {
 	   

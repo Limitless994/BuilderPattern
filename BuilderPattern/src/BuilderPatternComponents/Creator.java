@@ -1,9 +1,12 @@
 package BuilderPatternComponents;
 
 import java.util.List;
+
+import Type.Item;
+
 import java.util.ArrayList;
 
-public class Product {
+public class Creator {
 	private List<Item> items = new ArrayList<Item>();	
 
 	public void addItem(Item item){
@@ -27,12 +30,4 @@ public class Product {
 		this.items = items;
 	}
 
-	public void showItems(){
-		for (Item item : items) {
-			System.out.print("Item : " + item.name());
-			System.out.print(", Display : " + item.display().display());
-			System.out.println(", Cpu : " + item.cpu().cpuName()); 
-			System.out.println(", Price : " + item.price());
-		}		
-	}	
 }

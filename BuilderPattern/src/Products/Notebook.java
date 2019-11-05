@@ -1,4 +1,11 @@
-package BuilderPatternComponents;
+package Products;
+
+import GenericComponents.BigDisplay;
+import GenericComponents.Cpu;
+import GenericComponents.Display;
+import GenericComponents.NotebookCpu;
+import Type.Item;
+import Type.ProductType;
 
 public abstract class Notebook implements Item {
 

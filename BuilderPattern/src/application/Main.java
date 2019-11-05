@@ -1,10 +1,5 @@
 package application;
 
-import BuilderPatternComponents.Brand;
-import BuilderPatternComponents.Product;
-import BuilderPatternComponents.ProductBuilder;
-import BuilderPatternComponents.ProductType;
-import BuilderPatternComponents.ProductsFactory;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;

@@ -1,4 +1,11 @@
-package BuilderPatternComponents;
+package Products;
+
+import GenericComponents.Cpu;
+import GenericComponents.Display;
+import GenericComponents.SmallDisplay;
+import GenericComponents.SmartphoneCpu;
+import Type.Item;
+import Type.ProductType;
 
 public abstract class Smartphone implements Item {
 

@@ -1,4 +1,4 @@
-package BuilderPatternComponents;
+package GenericComponents;
 
 public class BigDisplay implements Display {
 
